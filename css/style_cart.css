@@ -43,12 +43,44 @@ html, body, .site-header, .cart-item, .modal {
 }
 
 [data-theme="dark"] .modal {
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.03));
-  border: 1px solid rgba(255,255,255,0.04);
+  background: rgba(20, 12, 9, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme="dark"] .modal h3,
+[data-theme="dark"] .modal-close,
+[data-theme="dark"] .form-row label {
+  color: var(--white);
+}
+
+[data-theme="dark"] .form-row input,
+[data-theme="dark"] .form-row textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: var(--white);
+}
+
+[data-theme="dark"] .form-row input::placeholder,
+[data-theme="dark"] .form-row textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .form-row .error {
+  color: var(--berry);
+}
+
+[data-theme="dark"] .btn-ghost {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+[data-theme="dark"] .btn-ghost:hover {
+  background-color: rgba(255, 255, 255, 0.06);
 }
 
 [data-theme="dark"] .btn-primary {
-  box-shadow: 0 8px 20px rgba(233,77,101,0.16);
+  box-shadow: 0 8px 20px rgba(233, 77, 101, 0.16);
 }
 
 /* Dark-mode cart button overrides */
